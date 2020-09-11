@@ -1,0 +1,35 @@
+body {
+    font-family: 'Consolas';
+    text-align: center;
+}
+
+p {
+    color: rgb(0, 0, 0);
+
+}
+
+.about {
+    background: #99b3ff;
+    padding: 20px;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    
+}
+
+.column {
+    float: left;
+    margin-right: 20px;
+    margin: 10px;
+    width: 25%;
+    text-align: center;
+}
+
+.card {
+    box-shadow: 10px 10px 8px 2px #bfbfbf;
+    padding: 16px 16px 0px 16px;
+    
+    
+}
