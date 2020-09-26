@@ -1,31 +1,11 @@
-<!DOCTYPE html>
-<html class="no-js">
-<!--<![endif]-->
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Login</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<?php
+require 'includes/header.php'
+?>
+<main>
+<link rel="stylesheet" href="css/login.css">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-    </script>
-    <link rel="stylesheet" href="css/login.css">
-</head>
-
-<body>
     <div class="bg-cover">
-
         <div class="container" style="padding-top: 80px;">
             <div id="Slideshow" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -63,21 +43,21 @@
 
         <div class="h-40 center-me">
             <div class="my-auto">
-                <form class="form-signin" style="background-color: white;">
+                <form class="form-signin" action="includes/login-helper.php" method="post" style="background-color: white;">
                     <img class="mb-4" src="images/shoepic1.jpg" alt=""
                         width="100" height="72">
                     <h1 class="mb-3 font-weight-normal">Please sign in</h1>
-                    <label for="inputEmail" class="sr-only">Email address</label>
-                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required
+                    <label for="inputEmail" class="sr-only">Username or Email Address</label>
+                    <input type="text" id="inputEmail" name="uname" class="form-control" placeholder="Username/ Email" required
                         autofocus>
                     <label for="inputPassword" class="sr-only">Password</label>
-                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                    <input type="password" id="inputPassword" name="pwd" class="form-control" placeholder="Password" required>
                     <div class="checkbox mb-3" style="text-align: left;">
                         <label>
                             <input type="checkbox" value="remember-me"> Remember me
                         </label>
                     </div>
-                    <button class="btn btn-lg btn-info btn-block" type="submit">Sign in</button>
+                    <button class="btn btn-lg btn-info btn-block" name="login-submit" type="submit">Sign in</button>
                     <p class="mt-5 mb-3 text-muted">&copy; 2020-2021</p>
                 </form>
             </div>
@@ -85,6 +65,4 @@
 
     </div>
 
-</body>
-
-</html>
+</main>
