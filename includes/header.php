@@ -43,9 +43,7 @@ session_start();
                 }
 
             ?>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.php">Login</a>
-                </li>
+                
                 <li class="nav-item active">
                     <a class="nav-link" href="../about.php">Home <span class="sr-only">(current)</span></a>
                 </li>
