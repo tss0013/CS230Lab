@@ -6,7 +6,7 @@ require 'includes/review-helper.php';
 
 <main>
     <span id="testAvg"></span>
-    <div class="container" align="center" style="max-width: 800px;">
+    <div class="container" align="center" style="max-width: 800px">
         <div class="my-auto">
             <form id="review-form" action="includes/review-helper.php" method="post">
                 <div class="container">
@@ -35,7 +35,7 @@ require 'includes/review-helper.php';
 <script type="text/javascript">
 
     var rateIndex = -1;
-    var id = <?php echo $_GET['id']; ?>
+    var id = <?php echo $_GET['id']; ?>;
     $(document).ready(function() {
         reset_star();
 
@@ -81,8 +81,8 @@ require 'includes/review-helper.php';
 
         //Used to interchangeably send GET requests for review display data. 
         function xhr_getter(prefix, element) {
-            var xhhtp = new XMLHttpRequest();
-            xhhtp.onreadystatechange = function(){
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function(){
 
                 if (this.readyState == 4 && this.status == 200) {
                     document.getElementById(element).innerHTML = this.responseText;
