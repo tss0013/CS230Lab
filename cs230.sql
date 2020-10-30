@@ -72,7 +72,7 @@ INSERT INTO `reviews` (`rev_id`, `item_id`, `uname`, `title`, `review_text`, `re
 
 --
 -- Table structure for table `shoes`
---
+--Text to re push
 
 CREATE TABLE `shoes` (
   `pid` int(11) NOT NULL,
