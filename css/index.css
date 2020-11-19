@@ -16,18 +16,24 @@ p {
 img {
     height: 150px;
     width: 150px;
+    margin-right: auto;
+    margin-left: auto;
     
 }
 
 .column {
     float: left;
-    margin-right: 20px;
+    margin-right: auto;
+    margin-left: auto;
     margin: 10px;
-    width: 25%;
+    width: 50%;
     text-align: center;
 }
 
 .card {
+    display: flex;
+  justify-content: center;
+  flex-direction: row;
     box-shadow: 10px 10px 8px 2px #bfbfbf;
     padding: 16px 16px 0px 16px;
     
